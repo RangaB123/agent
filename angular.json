@@ -123,5 +123,10 @@
       }
     }
   },
-  "defaultProject": "sgx-agent"
+  "defaultProject": "sgx-agent",
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "scss"
+    }
+  }
 }
