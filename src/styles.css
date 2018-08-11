@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+/* Grid */
+.k-grid{
+    margin-top:8px;
+}
+.k-grid th{
+    padding: 5px;
+}
+.k-grid td{
+    padding: 3px 5px;
+}
+.k-grid-header{
+    background: #1c2659;
+    color: #fff;
+}

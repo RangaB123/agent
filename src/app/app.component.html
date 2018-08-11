@@ -11,42 +11,6 @@
       <div class="grid"></div>
       <div class="grid"></div>
     </div>
-    <div class="table">
-      <p>
-        <span>Staff Name</span>
-        <span>Agent Status</span>
-        <span>State</span>
-        <span>In/Out Bound</span>
-        <span>Time</span>
-      </p>
-      <p>
-        <span>madhu</span>
-        <span>Available</span>
-        <span>Available</span>
-        <span></span>
-        <span>00.09877876</span>
-      </p>
-    </div>
-    <div class="table">
-      <p>
-        <span>% ACD</span>
-        <span>% ACW</span>
-        <span>% AHT</span>
-        <span>% AUX</span>
-        <span>% Available</span>
-        <span>Calls Answered</span>
-        <span>% Total</span>
-      </p>
-      <p>
-        <span>43</span>
-        <span>6</span>
-        <span>5</span>
-        <span>10</span>
-        <span>2</span>
-        <span>2</span>
-        <span>20</span>
-      </p>
-    </div>
   </div>
   <div class="center-block">
     <!-- <div style="position:relative">
@@ -65,8 +29,6 @@
       <div class="grid"></div>
       <div class="grid"></div>
       <div class="grid"></div>
-    </div>
-    <div class="grid-block">
       <div class="grid"></div>
       <div class="grid"></div>
       <div class="grid"></div>
@@ -75,11 +37,38 @@
       <div class="grid"></div>
       <div class="grid"></div>
       <div class="grid"></div>
-    </div>
-    <div class="grid-block">
       <div class="grid"></div>
       <div class="grid"></div>
       <div class="grid"></div>
     </div>
   </div>
+
+  <kendo-grid [data]="gridData" [height]="450">
+    <kendo-grid-column title="Staff Name" field="staffName">
+    </kendo-grid-column>
+    <kendo-grid-column title="Agent Status" field="agentStatus">
+    </kendo-grid-column>
+    <kendo-grid-column title="State" field="state">
+    </kendo-grid-column>
+    <kendo-grid-column title="In/Out Bound" field="bound">
+    </kendo-grid-column>
+    <kendo-grid-column title="Time" field="time">
+    </kendo-grid-column>
+    <kendo-grid-column title="% ACD" field="acd">
+    </kendo-grid-column>
+    <kendo-grid-column title="% ACW" field="acw">
+    </kendo-grid-column>
+    <kendo-grid-column title="% AHT" field="aht">
+    </kendo-grid-column>
+    <kendo-grid-column title="% AUX" field="aux">
+    </kendo-grid-column>
+    <kendo-grid-column title="% Available" field="available">
+    </kendo-grid-column>
+    <kendo-grid-column title="Calls Answered" field="callsAnswered">
+    </kendo-grid-column>
+    <kendo-grid-column title="% Total" field="total">
+    </kendo-grid-column>
+  </kendo-grid>
+
+
 </div>

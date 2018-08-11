@@ -7,29 +7,33 @@ html, body, .wrapper{
     padding:0;
     height:0;
 }
+.wrapper{
+    height:auto;
+}
 .wrapper > div{
     display: inline-block;
     vertical-align: top;
     text-align: center;
 }
 .left-block{
-    width: 30%;
+    // width: 30%;
 }
 .center-block{
     width: 30%;
 }
 .right-block{
-    width: 30%;
+    // width: 30%;
+    float:right;
 }
 .grid{
     width: 100px;
-    height: 100px;
-    background: gray;
+    height: 70px;
+    background: #ECF1C4;
     display: inline-block;
     margin: 5px;
     vertical-align: top;
-    color: #ffffff;
-    padding: 1%;
+    color: #454545;
+    padding: 5px;
     font-size: 13px;
     span{
         display: block;
