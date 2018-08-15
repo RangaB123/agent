@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AppService } from './app.service';
-import { pageData, sampleData } from './model';
+import { pageData } from './model';
 
 @Component({
   selector: 'app-root',
@@ -9,10 +9,12 @@ import { pageData, sampleData } from './model';
 })
 export class AppComponent {
   public gridData: any[];
+  public listData: object = {};
   constructor(private _appService: AppService){}
   ngOnInit(){
     this.gridData = pageData.gridData;
-    this.getData();
+    // this.getData();
+    this.listData = pageData.listData;
   }
 
   getData(){
@@ -20,12 +22,11 @@ export class AppComponent {
       data=>{
         console.log(data);
         this.gridData = data['gridData'];
+        this.listData = data['listData'];
       }
     );
     setTimeout(()=>{
       this.getData();
     }, 500000);
-  }
-
-  
+  }  
 }

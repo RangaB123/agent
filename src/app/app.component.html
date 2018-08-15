@@ -3,13 +3,22 @@
     <div class="grid-block">
       <div class="grid">
         <label>No of available agents</label>
-        <span>1</span>
+        <span>{{ listData.noOfAvailableAgents }}</span>
       </div>
-      <div class="grid"></div>
+      <div class="grid">
+        <label>No of calls waiting</label>
+        <span>{{ listData.noOfCallsWaiting }}</span>
+      </div>
     </div>
     <div class="grid-block">
-      <div class="grid"></div>
-      <div class="grid"></div>
+      <div class="grid">
+        <label>Avg waiting time of calls in Q</label>
+        <span>{{ listData.avgWaitingTime }}</span>
+      </div>
+      <div class="grid">
+        <label>Longest waiting time of calls in Q</label>
+        <span>{{ listData.longestWaitingTime }}</span>
+      </div>
     </div>
   </div>
   <div class="center-block">
