@@ -1,6 +1,6 @@
 export const pageData = {
   "listData": {
-    "noOfAvailableAgents": "1",
+    "noOfAvailableAgents": "3",
     "noOfCallsWaiting": "2",
     "avgWaitingTime": "00:02:34",
     "longestWaitingTime": "00:04:03",
@@ -329,5 +329,11 @@ export const pageData = {
       "callsAnswered": "222",
       "total": "444"
     }
+  ],
+  pieData: [
+    { "title": "Available", "value": 1 },
+    { "title": "Busy", "value": 3 },
+    { "title": "Break", "value": 3 },
+    { "title": "Leave", "value": 2 },
   ]
 }

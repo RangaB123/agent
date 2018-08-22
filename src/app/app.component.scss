@@ -379,3 +379,25 @@ $primary-color-orange-dark: #e08833;
     width: 0.74em;
     height: 0.74em;
 }
+
+.center-block{
+    position: relative;
+    .c100.big{
+        position: absolute;
+        transform: scale(0.5);
+        -webkit-transform-origin-y: top;
+        box-shadow: none;
+    }
+    .k-chart{
+        position: absolute;
+        height: 200px;
+        top: -18px;
+        left: 0;
+        right: 0;
+    }
+}
+.red{
+    span{
+        color: red;
+    }
+}

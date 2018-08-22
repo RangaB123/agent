@@ -1,7 +1,7 @@
 <div class="wrapper">
   <div class="left-block">
     <div class="grid-block">
-      <div class="grid">
+      <div class="grid" [ngClass]="{ 'red': listData['noOfAvailableAgents']>2 }">
         <label>No of available agents</label>
         <span>{{ listData.noOfAvailableAgents }}</span>
       </div>
@@ -32,6 +32,16 @@
         <p class="complete-text font-family-primary font-weight-regular"></p>
       </div>
     </div> -->
+    <kendo-chart [seriesColors]="['#6a8802', '#DF013A', '#FAAC58', '#6E6E6E']">
+      <kendo-chart-legend position="right"></kendo-chart-legend>
+      <kendo-chart-series>
+        <kendo-chart-series-item type="pie"
+          [data]="pieData"
+          field="value"
+          categoryField="title">
+        </kendo-chart-series-item>
+      </kendo-chart-series>
+    </kendo-chart>
   </div>
   <div class="right-block">
     <div class="grid-block">

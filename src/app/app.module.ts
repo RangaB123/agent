@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { AppService } from './app.service';
 import { GridModule } from '@progress/kendo-angular-grid';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ChartsModule } from '@progress/kendo-angular-charts';
 
 
 
@@ -17,7 +18,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BrowserModule,
     HttpClientModule,
     GridModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    ChartsModule
   ],
   providers: [AppService],
   bootstrap: [AppComponent]

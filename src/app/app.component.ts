@@ -10,11 +10,14 @@ import { pageData } from './model';
 export class AppComponent {
   public gridData: any[];
   public listData: object = {};
+  public availability: number = 2;
+  public pieData: any[];
   constructor(private _appService: AppService){}
   ngOnInit(){
     this.gridData = pageData.gridData;
     // this.getData();
     this.listData = pageData.listData;
+    this.pieData = pageData.pieData;
   }
 
   getData(){
