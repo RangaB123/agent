@@ -26,6 +26,7 @@ export class AppComponent {
         console.log(data);
         this.gridData = data['gridData'];
         this.listData = data['listData'];
+        this.pieData = data['pieData'];
       }
     );
     setTimeout(()=>{
